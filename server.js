@@ -27,7 +27,7 @@ app.post('/usuarios', (req, res) => {
     res.status(201).json(novoUsuario)
 })
 
-app.get('usuario/:id', (req, res) => {
+app.get('/usuario/:id', (req, res) => {
     const id = req.params.id
 
     const usuario = usuarios.find(u => u.id === parseInt(id))
